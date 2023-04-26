@@ -27,7 +27,7 @@ app.get('/',(req,res)=>{
 
 app.get('/about',(req,res)=>{
         res.render('about.hbs',{
-        pageTitle:'About page', welcomeMessage:'Welcome to the Infograph'});
+        pageTitle:'About page', welcomeMessage:'Welcome to the our Infograph'});
     });
 
 app.get('/bad',(req,res)=>{res.send({
