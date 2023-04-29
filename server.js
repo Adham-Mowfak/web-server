@@ -18,7 +18,7 @@ app.use((req,res,next)=>{
     })
     next(); });
 
-app.use((req,res,next)=>{ res.render('maintanance.hbs')});
+// app.use((req,res,next)=>{ res.render('maintanance.hbs')});
 
 app.get('/',(req,res)=>{
         res.render('home.hbs',{
@@ -33,5 +33,13 @@ app.get('/about',(req,res)=>{
 app.get('/bad',(req,res)=>{res.send({
         errMessage:'unable to handle request'
 });});
+
+app.get('/project',(req,res)=>{
+    res.render('project.hbs',{
+    pageTitle:'Project'});
+});
+
 app.listen(port , ()=>{console.log(`server is up on port ${port}`)
 ;});
+
+module.exports = app ;
