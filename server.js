@@ -33,7 +33,7 @@ app.get('/about',(req,res)=>{
 
     app.get('/project',(req,res)=>{
         res.render('project.hbs',{
-        pageTitle:'', welcomeMessage:'Proud to be part from success'});
+        pageTitle:'Apps progressed', welcomeMessage:'Proud to be part from success'});
     });
 
 app.get('/bad',(req,res)=>{res.send({
