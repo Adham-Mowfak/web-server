@@ -1,4 +1,5 @@
 const express = require('express');
+require('dotenv').config();
 const hbs = require('hbs');
 const fs = require('fs');
 const port = process.env.port || 3000; 
