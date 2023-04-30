@@ -31,6 +31,11 @@ app.get('/about',(req,res)=>{
         pageTitle:'About page', welcomeMessage:'Welcome to the our Infograph'});
     });
 
+    app.get('/project',(req,res)=>{
+        res.render('project.hbs',{
+        pageTitle:'Apps progressed', welcomeMessage:'Proud to be part from success'});
+    });
+
 app.get('/bad',(req,res)=>{res.send({
         errMessage:'unable to handle request'
 });});
